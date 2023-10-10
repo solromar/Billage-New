@@ -1,25 +1,24 @@
-# Guía de Uso de la API de Billage
+# Guía de Uso de la API de Billage  :eyes:
+Información detallada sobre cómo utilizar la API de Billage (API V2.1) 
 
-Esta guía te proporcionará información detallada sobre cómo utilizar la API de Billage (API V2.1) para interactuar programáticamente con tus datos de facturación y gastos. La API de Billage te permite acceder y gestionar facturas, gastos y otros datos relacionados con tus transacciones comerciales.
-
-## Introducción
+## Introducción :floppy_disk:
 La API de Billage es una interfaz de programación de aplicaciones que te permite acceder a tus datos de Billage y realizar operaciones como la consulta de facturas, la creación de nuevos gastos y la gestión de clientes. Para utilizar la API, necesitas una clave API válida que puedes obtener desde la plataforma de Billage.
 
-## Base URL
+## Base URL :electric_plug:
 La URL base para todas las solicitudes a la API de Billage es:
-https://app.getbillage.com/api
+**https://app.getbillage.com/api**
 
-## Autenticación
+## Autenticación :computer:
 Para autenticarte en la API de Billage, debes incluir tu clave API en las cabeceras de todas tus solicitudes HTTP 
 
-## Obtener Todas las Facturas de Gastos (Compras)
+### Obtener Todas las Facturas de Gastos (Compras)  :minidisc:
 
-Se realiza una 1er llamada a GET https://app.getbillage.com/api/v2/spendings para obtener todos los ID's de las facturas y asi poder obtner los detalles de cada factura desde
-GET https://app.getbillage.com/api/v2/spendings
+Se realiza una 1er llamada a **GET https://app.getbillage.com/api/v2/spendings** para obtener todos los ID's de las facturas y asi poder obtner los detalles de cada factura desde
+**GET https://app.getbillage.com/api/v2/spendings**
 
 Opcionalmente se puede pasar los siguientes parametros por el Body en la primer llamada
 
-### Parámetros Opcionales
+### Parámetros Opcionales  :keyboard:
 
 Puedes utilizar varios parámetros opcionales para refinar tu búsqueda, incluyendo:
 
