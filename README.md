@@ -11,13 +11,16 @@ La URL base para todas las solicitudes a la API de Billage es:
 ## Autenticación :computer:
 Para autenticarte en la API de Billage, debes incluir tu clave API en las cabeceras de todas tus solicitudes HTTP 
 
-### Obtener Todas las Facturas de Gastos (Compras)  :minidisc:
+### Obtener Todas las Facturas   :minidisc:
 
-Se realiza una 1er llamada a **GET https://app.getbillage.com/api/v2/spendings** para obtener todos los ID's de las facturas y asi poder obtner los detalles de cada factura desde
-**GET https://app.getbillage.com/api/v2/spendings**
+Se realiza una 1er llamada a <br>
+Para las FACTURAS RECIBIDAS **GET https://app.getbillage.com/api/v2/spendings** <br>
+Para las FACTURAS EMITIDAS **GET https://app.getbillage.com/api/v2/invoices** <br>
+para poder obtener todos los ID's de las facturas  <br>
 
-Opcionalmente se puede pasar los siguientes parametros por el Body en la primer llamada
+Luego se realiza otra llamada a la cual se les pasa todos los ID's obtenidos de la llamada anterior y asignar  los detalles de cada factura<br>
 
+Opcionalmente se puede pasar los siguientes parametros por el Body en la primer llamada<br>
 ### Parámetros Opcionales  :keyboard:
 
 Puedes utilizar varios parámetros opcionales para refinar tu búsqueda, incluyendo:
